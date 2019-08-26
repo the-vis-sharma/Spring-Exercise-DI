@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5af9f34d-8a02-48d7-8b21-391d332b1e41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/in/stackroute/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/in/stackroute/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/in/stackroute/Classroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/in/stackroute/Classroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/in/stackroute/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/in/stackroute/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/in/stackroute/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/in/stackroute/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/classroomConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/classroom-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classroomConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/stackroute/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/in/stackroute/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/stackroute/Classroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/in/stackroute/Classroom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/stackroute/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/in/stackroute/Location.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/stackroute/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/in/stackroute/Student.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566814072391</updated>
-      <workItem from="1566814076483" duration="12086000" />
+      <workItem from="1566814076483" duration="12962000" />
     </task>
     <servers />
   </component>
