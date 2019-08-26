@@ -12,7 +12,15 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("classroomConfig.xml");
-        Classroom classroom = (Classroom) context.getBean("classroom");
-        classroom.display();
+
+        //class 1
+        System.out.println("Class Room 1");
+        Classroom classFirst = (Classroom) context.getBean("class1");
+        classFirst.display();
+
+        System.out.println("Class Room 2");
+        Classroom classSecond = (Classroom) context.getBean("class2");
+        classSecond.display();
+
     }
 }

@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
-    <bean id="classroom" name="class 1" class="in.stackroute.Classroom">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean name="banglore" class="in.stackroute.Location" primary="true">
+        <property name="area" value="Kormangla"></property>
+        <property name="city" value="Banglore"></property>
+    </bean>
+
+    <bean name="jaipur" class="in.stackroute.Location">
+        <property name="area" value="Malvi Nagar"></property>
+        <property name="city" value="Jaipur"></property>
+    </bean>
+
+    <bean name="class1" class="in.stackroute.Classroom" autowire="byType">
         <property name="students">
             <util:list value-type="in.stackroute.Student">
                 <bean name="student 1" class="in.stackroute.Student">
@@ -20,4 +33,31 @@
             </util:list>
         </property>
     </bean>
+
+    <bean name="class2" class="in.stackroute.Classroom">
+        <property name="location" ref="jaipur"></property>
+        <property name="students">
+            <util:list value-type="in.stackroute.Student">
+                <bean name="student 1" class="in.stackroute.Student">
+                    <constructor-arg value="1"></constructor-arg>
+                    <property name="name" value="Shubham"></property>
+                    <property name="age" value="25"></property>
+                    <property name="gender" value="Male"></property>
+                </bean>
+                <bean name="student 2" class="in.stackroute.Student">
+                    <constructor-arg value="2"></constructor-arg>
+                    <property name="name" value="Garima"></property>
+                    <property name="age" value="19"></property>
+                    <property name="gender" value="Female"></property>
+                </bean>
+                <bean name="student 3" class="in.stackroute.Student">
+                    <constructor-arg value="3"></constructor-arg>
+                    <property name="name" value="Manoj"></property>
+                    <property name="age" value="21"></property>
+                    <property name="gender" value="Male"></property>
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
 </beans>
