@@ -22,9 +22,7 @@ public class Location {
 
     @Override
     public String toString() {
-        return "Location{" +
-                "area='" + area + '\'' +
-                ", city='" + city + '\'' +
-                '}';
+        return "\tarea: " + area +
+                "\tcity: " + city;
     }
 }

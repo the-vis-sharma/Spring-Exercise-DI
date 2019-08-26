@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <import resource="student-config.xml"></import>
+    <import resource="location-config.xml"></import>
+    <import resource="mentor-config.xml"></import>
+
+    <bean name="class1" class="in.stackroute.Classroom" autowire="byType" scope="prototype">
+        <constructor-arg ref="mentor1"></constructor-arg>
+        <property name="students" ref="class1list"></property>
+    </bean>
+
+    <bean name="class2" class="in.stackroute.Classroom" scope="prototype">
+        <constructor-arg ref="mentor2"></constructor-arg>
+        <property name="location" ref="jaipur"></property>
+        <property name="students" ref="class2list"></property>
+    </bean>
+
+</beans>

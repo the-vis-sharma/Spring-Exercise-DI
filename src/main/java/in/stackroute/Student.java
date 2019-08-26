@@ -17,6 +17,10 @@ public class Student {
         this.studentId = studentId;
     }
 
+    public int getStudentId() {
+        return studentId;
+    }
+
     public String getName() {
         return name;
     }
@@ -43,11 +47,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "studentId=" + studentId +
-                ", name='" + name + '\'' +
-                ", gender=" + gender +
-                ", age=" + age +
-                '}';
+        return String.format("%-10s%-30s%-20s%-20s", studentId, name, gender, age);
     }
 }

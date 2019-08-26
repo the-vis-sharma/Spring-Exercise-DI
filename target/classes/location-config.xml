@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="banglore" class="in.stackroute.Location" primary="true">
+        <property name="area" value="Kormangla"></property>
+        <property name="city" value="Banglore"></property>
+    </bean>
+
+    <bean name="jaipur" class="in.stackroute.Location">
+        <property name="area" value="Malvi Nagar"></property>
+        <property name="city" value="Jaipur"></property>
+    </bean>
+
+
+</beans>
