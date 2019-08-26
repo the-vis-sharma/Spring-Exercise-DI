@@ -16,4 +16,10 @@
         <property name="gender" value="Male"></property>
     </bean>
 
+    <bean name="mentor3" class="in.stackroute.Mentor">
+        <constructor-arg value="8"></constructor-arg>
+        <property name="name" value="Vish"></property>
+        <property name="gender" value="Male"></property>
+    </bean>
+
 </beans>

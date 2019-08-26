@@ -19,4 +19,10 @@
         <property name="students" ref="class2list"></property>
     </bean>
 
+    <bean name="class3" class="in.stackroute.FlippedClassRoom" scope="prototype" autowire="byType">
+        <constructor-arg ref="mentor3"></constructor-arg>
+        <property name="students" ref="class3list"></property>
+        <property name="duration" value="5"></property>
+    </bean>
+
 </beans>

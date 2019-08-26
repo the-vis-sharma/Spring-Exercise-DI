@@ -24,5 +24,10 @@ public class App
         classSecond.display();
         System.out.println("Mentor Equality: " + classSecond.checkMentorEquality(classSecond.getStudents().get(0)));
 
+        System.out.println("\nFlipped Class Room 3");
+        Classroom classThird = (Classroom) context.getBean("class3");
+        classThird.display();
+        System.out.println("Mentor Equality: " + classThird.checkMentorEquality(classThird.getStudents().get(0)));
+
     }
 }
