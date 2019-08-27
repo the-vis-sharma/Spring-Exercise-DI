@@ -1,5 +1,8 @@
 package in.stackroute;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +11,7 @@ public class Classroom {
     private Mentor mentor;
     private List<Student> studentList;
 
+    @Autowired
     private Location location;
 
     public Classroom(Mentor mentor) {

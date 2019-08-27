@@ -1,6 +1,8 @@
 package in.stackroute;
 
+import in.stackroute.config.ClassroomConfig;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -11,7 +13,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classroom-config.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(ClassroomConfig.class);
 
         //class 1
         System.out.println("Class Room 1");

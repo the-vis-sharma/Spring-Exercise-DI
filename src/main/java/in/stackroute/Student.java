@@ -1,11 +1,5 @@
 package in.stackroute;
 
-enum Gender {
-    Male,
-    Female,
-    Other
-}
-
 public class Student {
 
     private int studentId;
